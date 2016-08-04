@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html lang="en" 
-	xmlns="http://www.w3.org/1999/xhtml"
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:p="http://primefaces.org/ui"
 	xmlns:ui="http://java.sun.com/jsf/facelets">
@@ -12,18 +11,14 @@
 		<ui:define name="title">PlantPlaces.com: Promoting Plant Diversity through Education</ui:define>
 		<ui:define name="top">PlantPlaces.com: Promoting Plant Diversity through Education</ui:define>
 		<ui:define name="content">
-			<h1>Search Results</h1>
-			<em><h:outputLabel value="#{applicationInfo.slogan}" /></em>
+		<h1>Welcome to PlantPlaces.com</h1>
+		<em><h:outputLabel value="#{applicationInfo.slogan}" /></em>
 
-			<h2>
-				
-				<h:outputLabel value="#{plantSearch.name}" />
-			</h2>
+		<p>Dont be a jerk and dont sue me..</p>
 
-			<h:form>
-				<h:inputText value="#{plant.name}" />
-				<h:commandButton value="Submit" action="#{searchPlants.execute}" />
-			</h:form>			
+		<hr />
+		
+		
 		</ui:define>
 	</ui:composition>
 </h:body>
