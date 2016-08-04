@@ -15,7 +15,11 @@
 	
 	<h2>Search Results for <h:outputLabel value="#{plantSearch.name}"/></h2>
 	
+	<h:form>
+		<h:inputText value="#{plantSearch.name}"/>
+		<h:commandButton value="Submit" action="#{searchPlants.execute}"/>
 	
+	</h:form>
 	
 	<hr/>
 	<h:link value="Home" outcome="index"/><br/>
