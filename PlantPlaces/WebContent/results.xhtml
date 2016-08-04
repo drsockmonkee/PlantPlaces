@@ -10,17 +10,15 @@
 <title>PlantPlaces.com</title>
 </h:head>
 <h:body>
-	<h1>Welcome to PlantPlaces.com</h1>
+	<h1>Search Results</h1>
 	<em><h:outputLabel value="#{applicationInfo.slogan}"/></em>
 	
-	<p>Enter a Plant name and search</p>
+	<h2>Search Results for <h:outputLabel value="#{plantSearch.name}"/></h2>
 	
-	<h:form>
-	<h:inputText value="#{plantSearch.name}"/>
-	<h:commandButton value="Submit" action="search"/>
-	</h:form>
+	
 	
 	<hr/>
+	<h:link value="Home" outcome="index"/><br/>
 	<h:link value="Contact Us" outcome="contactUs"/>
 </h:body>
 </html>
