@@ -16,8 +16,8 @@
 	<p>Enter a Plant name and search</p>
 	
 	<h:form>
-	<h:inputText value="#{plantSearch.name}"/>
-	<h:commandButton value="Submit" action="search"/>
+	<h:inputText value="#{plant.name}"/>
+	<h:commandButton value="Submit" action="#{searchPlants.execute}"/>
 	</h:form>
 	
 	<hr/>
