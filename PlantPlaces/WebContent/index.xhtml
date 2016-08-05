@@ -24,8 +24,8 @@
 		<p>Enter a Plant name and search</p>
 
 		<h:form>
-			<h:inputText value="#{plant.name}" />
-			<h:commandButton value="Submit" action="#{searchPlants.execute}" />
+			<p:autoComplete value="#{plant.name}" completeMethod="#{searchPlants.completePlants}" />
+			<p:commandButton value="Submit" action="#{searchPlants.execute}" />
 		</h:form>				
 		</ui:define>
 	</ui:composition>

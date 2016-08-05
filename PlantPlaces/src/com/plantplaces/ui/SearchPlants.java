@@ -1,5 +1,8 @@
 package com.plantplaces.ui;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.annotation.ManagedBean;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -28,5 +31,27 @@ public class SearchPlants {
 
 	public void setPlant(Plant plant) {
 		this.plant = plant;
+	}
+	
+	public List<Plant> completePlants(String query){
+		ArrayList<Plant> allPlants = new ArrayList<Plant>();
+		//Create the list of plants for return
+		Plant redbud = new Plant();
+		redbud.setName("Eastern Redbud");
+		allPlants.add(redbud);
+		
+		Plant crepemyrtle = new Plant();
+		redbud.setName("Red Rocket Crepe Myrtle");
+		allPlants.add(crepemyrtle);
+		
+		Plant pawpaw = new Plant();
+		redbud.setName("The Big Paw Paw");
+		allPlants.add(pawpaw);
+		
+		Plant bonsai = new Plant();
+		redbud.setName("Mr Miagi tree");
+		allPlants.add(bonsai);
+		
+		return allPlants;
 	}
 }
