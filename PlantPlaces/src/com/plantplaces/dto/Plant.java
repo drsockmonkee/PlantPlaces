@@ -22,9 +22,11 @@ public class Plant {
 	
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-		return super.toString();
-		//return name;
+		// TODO Auto-generated method stub		
+		//System.out.println(name);		
+		//return super.toString();
+				
+		return name;
 	}
 	
 }

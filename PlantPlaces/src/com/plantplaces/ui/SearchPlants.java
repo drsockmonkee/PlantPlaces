@@ -34,23 +34,21 @@ public class SearchPlants {
 	}
 	
 	public List<Plant> completePlants(String query){
-		ArrayList<Plant> allPlants = new ArrayList<Plant>();
-		//Create the list of plants for return
+ArrayList<Plant> allPlants = new ArrayList<Plant>();
+		
+		// Create plants and add them to the collection.
 		Plant redbud = new Plant();
 		redbud.setName("Eastern Redbud");
 		allPlants.add(redbud);
 		
-		Plant crepemyrtle = new Plant();
-		redbud.setName("Red Rocket Crepe Myrtle");
-		allPlants.add(crepemyrtle);
+		Plant pecantree = new Plant();
+		pecantree.setName("The big ol Pecan tree");
+		allPlants.add(pecantree);
 		
-		Plant pawpaw = new Plant();
-		redbud.setName("The Big Paw Paw");
-		allPlants.add(pawpaw);
+		Plant chickpeas = new Plant();
+		chickpeas.setName("Chickpeas");
+		allPlants.add(chickpeas);
 		
-		Plant bonsai = new Plant();
-		redbud.setName("Mr Miagi tree");
-		allPlants.add(bonsai);
 		
 		return allPlants;
 	}
