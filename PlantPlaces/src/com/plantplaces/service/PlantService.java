@@ -13,7 +13,9 @@ import com.plantplaces.dto.Plant;
 public class PlantService implements IPlantService {
 
 	@Inject
+	private
 	IPlantDAO plantDAO;
+	
 	private List<Plant> allPlants;
 	
 	@Override
@@ -41,5 +43,14 @@ public class PlantService implements IPlantService {
 		// TODO Auto-generated method stub
 		return returnPlants;
 	}
+	
+	public IPlantDAO getPlantDAO() {
+		return plantDAO;
+	}
+
+	public void setPlantDAO(IPlantDAO plantDAO) {
+		this.plantDAO = plantDAO;
+	}
+
 
 }
